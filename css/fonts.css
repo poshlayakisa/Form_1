@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "BG_Bold";
+    src: url(../fonts/BrandonGrotesque-Bold.ttf);
+}
+
+@font-face {
+    font-family: "BG_BLack";
+    src: url(../fonts/BrandonGrotesque-Black.ttf);
+}
+
+@font-face {
+    font-family: "BG_Regular";
+    src: url(../fonts/BrandonGrotesque-Regular.ttf);
+}

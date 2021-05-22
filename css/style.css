@@ -1,0 +1,292 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 600px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(73, 193, 255, 0.2);
+}
+
+form {
+    width: 354px;
+    height: 430px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.gori {
+    position: absolute;
+    bottom: 0%;
+}
+
+.niz {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputii {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.row {
+    width: 294px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.ssilki {
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+}
+
+.logo p:nth-child(1) {
+    font-size: 12px;
+    color: #b4b4b7;
+    font-family: "BG_Bold";
+    letter-spacing: 5px;
+    transition: 1s;
+}
+
+.logo p:nth-child(2) {
+    font-size: 19px;
+    color: #26243b;
+    font-family: "BG_Black";
+    letter-spacing: 5px;
+    transition: 1s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    cursor:default;
+}
+
+.logo:hover p {
+    letter-spacing: 10px;
+    transition: 1s;
+}
+
+.inputii .line input {
+    border: none;
+    outline: none;
+    width: 100%;
+    text-indent: 7px;
+    line-height: 48px;
+    color: #040413;
+    opacity: 50%;
+    font-family: "BG_Regular";
+    font-size: 17px;
+}
+
+.line {
+    border-bottom: 2px solid #e6eaec;
+}
+
+.niz {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.left label {
+    color: #040413;
+    opacity: 50%;
+    font-family: "BG_Regular";
+    font-size: 17px;
+    text-decoration: underline 1px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.left label:hover {
+    color: #040413;
+    opacity: 30%;
+    transition: .3s;
+}
+
+.l1 label:hover + i {
+    transform: translateX(4px);
+    transition: 1s;
+}
+
+input[type="password"]{
+    letter-spacing: 10px;
+    font-size: 1.5em;
+}
+input[type="password"]::placeholder{
+    letter-spacing: 0;
+}
+
+i {
+    font-size: 10px;
+    color: #040413;
+    opacity: 50%;
+    transition: 1s;
+    position: absolute;
+}
+
+.left p {
+    font-family: "BG_Regular";
+    font-size: 17px;
+    color: #7cc258;
+}
+
+.pod-log-2 {
+    width: 96px;
+    height: 40px;
+    transform: rotate(-2deg);
+    background-color: #49c1ff;
+    position: absolute;
+    transition: .5s;
+}
+
+.pod-log-1 {
+    width: 96px;
+    height: 40px;
+    transform: rotate(2deg);
+    background-color: #49c1ff;
+    opacity: 50%;
+    position: absolute;
+    transition: .5s;
+}
+
+.right input {
+    width: 93px;
+    height: 38px;
+    background-color: #49c1ff;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: "BG_Bold";
+    font-size: 13px;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 93px;
+    height: 44px;
+    position: relative;
+    overflow: hidden;
+}
+
+.right:hover .pod-log-2 {
+    transform: rotate(2deg);
+    transition: .5s;
+}
+
+.right:hover .pod-log-1 {
+    transform: rotate(-2deg);
+    transition: .5s;
+}
+
+.left {
+    position: relative;
+    width: 200px;
+}
+
+.l1, .l2 {
+    display: flex;
+    align-items: center;
+}
+
+.non-active {
+    display: none;
+}
+
+.ssilki a, .ssilki p {
+    color: #ffffff;
+    opacity: 30%;
+    font-family: "BG_Regular";
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 3px;
+    margin-right: 3px;
+    transition: 0.3s;
+}
+
+.ssilki a:hover {
+    color: #ffffff;
+    opacity: 50%;
+    transition: 0.3s;
+}
+
+/* вращение картинки */
+
+img.rot {
+    animation: 300s linear infinite rot;
+}
+
+@keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+ input[type="checkbox"] {
+    display: none;
+}
+  /* 
+input[type="checkbox"]:checked ~ .non-active {
+    display: block;
+} */
+
+.visible{
+    display: none;
+}
+
+
+.niz {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.ssilki p, .l2 p {
+    cursor: default;
+}
